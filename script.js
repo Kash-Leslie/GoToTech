@@ -1,9 +1,9 @@
 <!--//
 function pasuser(form) 
 {
-  if (form.username.value=="JavaScript")
+  if (form.id.value=="JavaScript")
   { 
-      if (form.password.value=="Kit")
+      if (form.pass.value=="Kit")
       {              
       location= "index.html" 
       }
