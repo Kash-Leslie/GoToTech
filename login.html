@@ -3,25 +3,58 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <!-- Title -->  
-    <title>Login</title>
-  </head>  
- 
-<body>
-<!-- Call to JS -->
-<script src="script.js"></script>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+    <body>
+      <script src="script.js"></script>
+      <center>
 
-<!-- Username -->
-<input name="username" type="text">
+        <table bgcolor="white" cellpadding="12" border="1">
+          <tr>
+            <td colspan="2">
+              <center>
+                <h1><i>Login Area</i></h1>
+              </center>
+            </td>
+          </tr>
 
-<!-- Password -->
-<input name="password" type="password">
+          <!--User Name-->
+          <tr>
+            <td>
+              <h1><i>UserID:</i></h1>
+            </td>
+            <td>
+              <form name="login"><input name="id" type="text">
+            </td>
+          </tr>
 
-<!-- Login -->
-<input type="button" value="Login" onClick="pasuser(this.form)">
+          <!--Password-->
+          <tr>
+            <td>
+              <h1><i>Password:</i></h1>
+            </td>
+            <td>
+              <input name="pass" type="password">
+            </td>
+          </tr> 
+          <!--Login Button-->
+          
+          <tr>
+            <td>
+              <center>
+                <input type="button" value="Login" onClick="pasuser(this.form)">
+              </center>
+            </td>
+            <td>
+              <center>
+                <br><input type="Reset"></form>
+              </center>
+            </td>
+          </tr>
 
-<!-- Reset -->
-<br><input type="Reset"></form>
-</body>
-
+        </table>
+      </center> 
+   </body>
 </html>
