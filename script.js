@@ -5,7 +5,7 @@ function pasuser(form)
   { 
       if (form.pass.value=="Kit")
       {              
-      location= "index.html" 
+      location="index.html" 
       }
       else 
       {
