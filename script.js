@@ -11,10 +11,10 @@ function pasuser(form)
       {
       alert("Invalid Password")
       }
-  else 
-  { 
-  alert("Invalid UserID")
-  }
+      else 
+      { 
+      alert("Invalid UserID")
+      }
   }
 }
 //-->
