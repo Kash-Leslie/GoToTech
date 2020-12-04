@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  
-    <body>
-      <script src="script.js"></script>
-      <center>
+<head>
+    <title>Mr. Leohr's Project Page</title>
+        <script language="javascript">
+        <!--//
+            /*This Script allows people to enter by using a form that asks for a
+            UserID and Password*/
+            function pasuser(form) {
+                //Loop through all firebase values
+                if (form.id.value=="JavaScript") {
+                    
+                    //Firebase lookup of a match of the id with the password associated with it
+                    if (form.pass.value=="Kit") {              
+                        location="page2.html" 
+                    }
+                    else {
+                        alert("Invalid Password")
+                    }
+                } else {  
+                    alert("Invalid UserID")
+                }
+            }
+        //-->
+        </script>
+</head>
 
-        <table bgcolor="white" cellpadding="12" border="1">
-          <tr>
-            <td colspan="2">
-              <center>
-                <h1><i>Login Area</i></h1>
-              </center>
-            </td>
-          </tr>
+<body>
+    <h1>Mr. Leohr's Project Page</h1>
+    <p>
+        Welcome!
+    </p>
 
-          <!--User Name-->
-          <tr>
-            <td>
-              <h1><i>UserID:</i></h1>
-            </td>
-            <td>
-              <form name="login"><input name="id" type="text">
-            </td>
-          </tr>
-
-          <!--Password-->
-          <tr>
-            <td>
-              <h1><i>Password:</i></h1>
-            </td>
-            <td>
-              <input name="pass" type="password">
-            </td>
-          </tr> 
-          <!--Login Button-->
-          
-          <tr>
-            <td>
-              <center>
-                <input type="button" value="Login" onClick="pasuser(this.form)">
-              </center>
-            </td>
-            <td>
-              <center>
-                <br><input type="Reset"></form>
-              </center>
-            </td>
-          </tr>
-
-        </table>
-      </center> 
-   </body>
+    <center>
+        <form name="login">
+            <table bgcolor="white" cellpadding="12" border="1">
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <h1><i>Login Area</i></h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1><i>UserID:</i></h1>
+                    </td>                
+                    <td>
+                        <input name="id" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1><i>Password:</i></h1>
+                    </td>
+                    <td>
+                        <input name="pass" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <input type="button" value="Login" onClick="pasuser(this.form)">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>        
+    </center> 
+</body>
 </html>
