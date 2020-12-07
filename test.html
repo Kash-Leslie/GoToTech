@@ -1,3 +1,15 @@
+
+firebase.initializeApp(firebaseConfig);
+
+<input type="email" id="email">
+
+<input type="password" id="pass">
+
+<button id="login">
+
+
+<script language="javascript">
+
 var firebaseConfig = {
     apiKey: "AIzaSyC8i0Bv0IpoEKejM2jABdfP1e3nFQEh4xc",
     authDomain: "gtt-login.firebaseapp.com",
@@ -8,16 +20,10 @@ var firebaseConfig = {
     appId: "1:440840296576:web:1ee55c195a3efd971c6e65"
                     };
                     
-firebase.initializeApp(firebaseConfig);
-
-<input type="email" id="email">
-
-<input type="password" id="pass">
-
-<button id="login">
-
 
 login.addEventListener('click',e => {
 const auth = firebase.auth();
 auth.signInWithEmailAndPassword(email.value,pass.value);
+    
 });
+</script>
