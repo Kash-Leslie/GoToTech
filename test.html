@@ -21,10 +21,22 @@ var firebaseConfig = {
                     };
     
 firebase.initializeApp(firebaseConfig);
-                    
+
 login.addEventListener('click',e => {
+const email = email.value;
+const pass = pass.value;
 const auth = firebase.auth();
-auth.signInWithEmailAndPassword(email.value,pass.value);
+auth.signInWithEmailAndPassword(email,pass);
+});
+
     
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if(firebaseUser){
+        alert("Yay");
+                    } else {
+                         alert("Invalid);
+                           }
+        
+        
 });
 </script>
