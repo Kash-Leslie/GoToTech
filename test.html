@@ -1,5 +1,5 @@
 
-firebase.initializeApp(firebaseConfig);
+
 
 <input type="email" id="email">
 
@@ -19,8 +19,9 @@ var firebaseConfig = {
     messagingSenderId: "440840296576",
     appId: "1:440840296576:web:1ee55c195a3efd971c6e65"
                     };
+    
+firebase.initializeApp(firebaseConfig);
                     
-
 login.addEventListener('click',e => {
 const auth = firebase.auth();
 auth.signInWithEmailAndPassword(email.value,pass.value);
